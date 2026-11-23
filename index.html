@@ -498,7 +498,7 @@ function money(m,v){return (m==='PEN'?'S/ ':m==='USD'?'US$ ':m+' ')+Number(v).to
 
 google.script.run.withSuccessHandler(function(r){
   D=r;var c=r.config;
-  /* La identidad visual de ESTRUCTA se controla desde esta hoja de estilos. */c.NOMBRE_TIENDA=c.NOMBRE_TIENDA||'ESTRUCTA';c.TELEFONO=c.TELEFONO||'+51 993207325';c.EMAIL_CONTACTO=(!c.EMAIL_CONTACTO||c.EMAIL_CONTACTO==='fcurop08@gmail.com')?'estructagroup@gmail.com':c.EMAIL_CONTACTO;c.RAZON_SOCIAL=c.RAZON_SOCIAL||'ESTRUCTA';
+  /* La identidad visual de ESTRUCTA se controla desde esta hoja de estilos. */c.NOMBRE_TIENDA=c.NOMBRE_TIENDA||'ESTRUCTA';c.TELEFONO=c.TELEFONO||'+51 993207325';c.EMAIL_CONTACTO='estructagroup@gmail.com';c.RAZON_SOCIAL=c.RAZON_SOCIAL||'ESTRUCTA';
   document.title=c.NOMBRE_TIENDA;
   var num=String(c.TELEFONO||'').replace(/\D/g,''),wa='https://wa.me/'+num+'?text='+encodeURIComponent('Hola '+c.NOMBRE_TIENDA+', quisiera información sobre los cursos.');
   $('tel').href=wa;$('tel-t').textContent=c.TELEFONO;$('wa-flot').href=wa;$('f-wa').href=wa;$('f-wa').textContent='WhatsApp '+c.TELEFONO;
