@@ -15,3 +15,4 @@ En GitHub: Settings → Pages → Deploy from a branch → `main` → `/(root)` 
 ## Importante
 Antes de anunciar el sitio, probar en el enlace de GitHub Pages: carga de cursos, formularios de contacto, pedidos y cualquier flujo de pago. La API de Apps Script debe estar desplegada con acceso adecuado y sus funciones públicas deben limitarse a las operaciones necesarias.
 Actualización para activar la publicación de ESTRUCTA en GitHub Pages.
+
